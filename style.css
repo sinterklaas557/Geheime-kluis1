@@ -21,8 +21,8 @@
 
 /* Kluisafbeelding styling */
 .kluis-afbeelding {
-    width: 120%; /* Verhoog de grootte naar 120% van het oorspronkelijke formaat */
-    max-width: 900px; /* Limiteer de maximale grootte */
+    width: 120%; /* 50% groter dan normaal */
+    max-width: 900px;
     display: block;
     margin: 20px auto;
 }
@@ -32,7 +32,7 @@
     width: 90%; /* Bijna fullscreen */
     max-width: 1000px;
     margin: 20px auto;
-    opacity: 0; /* Begin onzichtbaar */
+    opacity: 0; /* Start onzichtbaar */
 }
 
 /* Container styling */
@@ -51,7 +51,6 @@
     margin-top: 20px;
 }
 
-/* Invoerveld styling */
 input[type="password"] {
     padding: 10px;
     font-size: 16px;
@@ -62,7 +61,6 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-/* Knop styling */
 button {
     padding: 10px 20px;
     font-size: 16px;
