@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geheime Kluis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>De geheime kluis van Sinterklaas</h1>
+        <p>Voer de juiste code in om de kluis te openen.</p>
+
+        <!-- Kluisafbeelding -->
+        <img src="kluis.jpg" alt="Kluis" class="kluis-afbeelding">
+
+        <!-- Wachtwoord invoeren -->
+        <div class="wachtwoord-container">
+            <input type="password" id="passwordInput" placeholder="Voer de code in">
+            <button onclick="checkPassword()">Open de kluis</button>
+        </div>
+
+        <!-- Inhoud die verschijnt na het invoeren van de juiste code -->
+        <div id="secretContent" class="verborgen">
+            <h2>Gefeliciteerd, je hebt de kluis geopend!</h2>
+            <img src="geheim.jpg" alt="Geheime afbeelding" class="geheim-afbeelding">
+            <p>De Sint neemt jullie graag mee naar Normality No More | Schubert’s Winterreise revisited by
+Conny Janssen Danst, Via Berlin & Ragazze Quartet"</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

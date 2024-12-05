@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.kluis-afbeelding {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.wachtwoord-container {
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.verborgen {
+    display: none;
+}
+
+.geheim-afbeelding {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.geheim-afbeelding.fade-in {
+    opacity: 1;
+}
