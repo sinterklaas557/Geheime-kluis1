@@ -21,8 +21,8 @@
 
 /* Kluisafbeelding styling */
 .kluis-afbeelding {
-    width: 80%; /* Grotere kluisafbeelding */
-    max-width: 600px;
+    width: 120%; /* Verhoog de grootte naar 120% van het oorspronkelijke formaat */
+    max-width: 900px; /* Limiteer de maximale grootte */
     display: block;
     margin: 20px auto;
 }
@@ -32,6 +32,7 @@
     width: 90%; /* Bijna fullscreen */
     max-width: 1000px;
     margin: 20px auto;
+    opacity: 0; /* Begin onzichtbaar */
 }
 
 /* Container styling */
@@ -45,16 +46,23 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Wachtwoordcontainer styling */
 .wachtwoord-container {
     margin-top: 20px;
 }
 
+/* Invoerveld styling */
 input[type="password"] {
     padding: 10px;
     font-size: 16px;
     margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
 }
 
+/* Knop styling */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -63,6 +71,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
