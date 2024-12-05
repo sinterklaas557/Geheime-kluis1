@@ -1,26 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 20px;
+/* Verberg de geheime inhoud standaard */
+.verborgen {
+    display: none;
 }
 
+/* Fade-in animatie */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Standaard stijl voor de geheime afbeelding */
+.geheim-afbeelding {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Activeer de fade-in animatie */
+.geheim-afbeelding.fade-in {
+    opacity: 1;
+}
+
+/* Standaard stijl voor de container */
 .container {
-    max-width: 600px;
-    margin: auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: #f4f4f9;
     padding: 20px;
-    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .kluis-afbeelding {
     width: 200px;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .wachtwoord-container {
@@ -31,8 +48,6 @@ input[type="password"] {
     padding: 10px;
     font-size: 16px;
     margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 button {
@@ -47,20 +62,4 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-
-.verborgen {
-    display: none;
-}
-
-.geheim-afbeelding {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-}
-
-.geheim-afbeelding.fade-in {
-    opacity: 1;
 }
