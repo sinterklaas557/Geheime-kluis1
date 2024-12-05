@@ -1,28 +1,43 @@
-/* Kluisafbeelding groter */
-.kluis-afbeelding {
-    width: 80%; /* Zorgt voor een grotere weergave */
-    max-width: 600px; /* Limiteert de grootte */
-    display: block;
-    margin: 20px auto; /* Centreert de afbeelding */
+/* Verborgen inhoud standaard verbergen */
+.verborgen {
+    display: none;
 }
 
-/* Geheime afbeelding fullscreen na fade-in */
-.geheim-afbeelding {
-    width: 0; /* Start met onzichtbare afbeelding */
-    height: auto;
+/* Fade-in effect */
+.fade-in {
     opacity: 0;
-    transition: all 2s ease-in-out; /* Fade-in en vergroten */
+    animation: fadeIn 2s forwards;
 }
 
-.geheim-afbeelding.fade-in {
-    width: 90%; /* Wordt bijna fullscreen */
-    max-width: 1000px; /* Limiteert de grootte */
-    opacity: 1;
-    margin: 20px auto;
+/* Fade-in animatie */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Kluisafbeelding styling */
+.kluis-afbeelding {
+    width: 80%; /* Grotere kluisafbeelding */
+    max-width: 600px;
     display: block;
+    margin: 20px auto;
 }
 
-/* Container-styling */
+/* Geheime afbeelding styling */
+.geheim-afbeelding {
+    width: 90%; /* Bijna fullscreen */
+    max-width: 1000px;
+    display: block;
+    margin: 20px auto;
+    opacity: 0; /* Start onzichtbaar */
+    animation: fadeIn 2s forwards;
+}
+
+/* Container styling */
 .container {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -31,28 +46,4 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.wachtwoord-container {
-    margin-top: 20px;
-}
-
-input[type="password"] {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
