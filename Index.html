@@ -12,7 +12,7 @@
         <p>Voer de juiste code in om de kluis te openen.</p>
 
         <!-- Kluisafbeelding -->
-        <img src="kluis.jpg" alt="Kluis" class="kluis-afbeelding">
+        <img src="kluis.jpg" alt="Kluis" class="kluis-afbeelding" id="kluisAfbeelding">
 
         <!-- Wachtwoord invoeren -->
         <div class="wachtwoord-container">
@@ -22,11 +22,13 @@
 
         <!-- Inhoud die verschijnt na het invoeren van de juiste code -->
         <div id="secretContent" class="verborgen">
-            <h2>Gefeliciteerd, je hebt de kluis geopend!</h2>
+            <h2 id="congratsMessage" class="verborgen">Gefeliciteerd, je hebt de kluis geopend!</h2>
             <img src="geheim.jpg" alt="Geheime afbeelding" class="geheim-afbeelding">
-            <p>De Sint nodigt jullie van harte uit voor <em>Normality No More: Schuberts Winterreise revisited</em> door 
-               <strong>Conny Janssen Danst, Via Berlin & Ragazze Quartet</strong>.<br>
-               <strong>22 december, 14:30</strong>, Schouwburg Rotterdam.</p>
+            <p id="secretText" class="verborgen">
+                De Sint nodigt jullie van harte uit voor <em>Normality No More: Schuberts Winterreise revisited</em> door 
+                <strong>Conny Janssen Danst, Via Berlin & Ragazze Quartet</strong>.<br>
+                <strong>22 december, 14:30</strong>, Schouwburg Rotterdam.
+            </p>
         </div>
     </div>
 
