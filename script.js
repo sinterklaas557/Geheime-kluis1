@@ -14,9 +14,13 @@ function checkPassword() {
 
         // Toon de geheime afbeelding en tekst na een fade-in
         setTimeout(() => {
-            document.querySelector(".geheim-afbeelding").classList.add("fade-in");
-            document.getElementById("secretText").classList.remove("verborgen");
-            document.getElementById("secretText").classList.add("fade-in");
+            const geheimAfbeelding = document.querySelector(".geheim-afbeelding");
+            geheimAfbeelding.classList.remove("verborgen");
+            geheimAfbeelding.classList.add("fade-in");
+
+            const secretText = document.getElementById("secretText");
+            secretText.classList.remove("verborgen");
+            secretText.classList.add("fade-in");
         }, 2000); // Wacht 2 seconden voordat de afbeelding en tekst zichtbaar worden
     } else {
         alert("Onjuiste code. Probeer opnieuw!");
