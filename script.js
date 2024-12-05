@@ -1,5 +1,5 @@
 function checkPassword() {
-    const juisteCode = "AAA123"; // Stel hier jouw gewenste code in
+    const juisteCode = "geheim123"; // Stel hier jouw gewenste code in
     const ingevoerdeCode = document.getElementById("passwordInput").value;
 
     if (ingevoerdeCode === juisteCode) {
@@ -7,11 +7,11 @@ function checkPassword() {
         const secretContent = document.getElementById("secretContent");
         secretContent.classList.remove("verborgen");
 
-        // Voeg het fade-in-effect toe aan de afbeelding
+        // Voeg fade-in animatie toe aan de afbeelding
         const geheimAfbeelding = document.querySelector(".geheim-afbeelding");
         geheimAfbeelding.classList.add("fade-in");
     } else {
-        // Waarschuwing bij foutieve code
+        // Waarschuwing als het wachtwoord onjuist is
         alert("Onjuiste code. Probeer opnieuw!");
     }
 }
